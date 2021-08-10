@@ -128,7 +128,7 @@ body {
     .address-bar {
         flex-direction: column;
         width: 90%;
-        height: 65%;
+        height: 50%;
     }
 
     .address-bar p {
