@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+
+*,*::after,*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(./images/pattern-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Rubik', sans-serif;
+}
+
+.title {
+    font-size: 1.7em;
+    color: white;
+    font-weight: 500;
+    margin: 25px;
+}
+
+.search-bar {
+    display: flex;
+    
+}
+.search-box {
+    height: 50px;
+    width: 500px;
+    background-color: white;
+    border-radius: 13px 0 0 13px;
+    border: none;
+    font-size: 17px;
+    padding: 10px;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+}
+
+
+.search-box:focus {
+    outline: none;
+}
+
+.search-bar button {
+    padding: 0 20px;
+    border-radius: 0 13px 13px 0;
+    border: none;
+    background-color: black;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: hsl(0, 0%, 17%);
+}
+
+
+.address-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    top: 175px;
+    width: 75%;
+    height: 175px;
+    background-color: white;
+    border-radius: 13px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+.address-bar div {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* align-items: center; */
+    height: 175px;
+    width: 300px;
+    padding: 20px;
+    padding-left: 30px;
+    padding-top: 15px;
+    
+
+}
+
+
+.address-bar p {
+    color:  hsl(0, 0%, 59%);
+    font-weight: 500;
+    font-size: 13px;
+    padding-top: 20px;
+}
+
+
+.address-bar h1 {
+    /* text-align: center; */
+    font-size: 23px;
+    font-weight: 700;
+    padding: 30px;
+    padding-right: 60px;
+    padding-left: 0px;
+    color: hsl(0, 0%, 17%);
+    border-right: 1px solid hsl(0, 0%, 59%);
+    font-weight: 500;
+}
+
+#isp-display {
+    border: 0;
+}
+
+
+#mapid {
+    height: 500px;
+    width: 100%;
+    margin-top: 130px;
+    z-index: 0;
+}
+
+@media only screen and (max-width:650px) {
+    body {
+        background-size: auto;
+    }
+
+    .address-bar {
+        flex-direction: column;
+        width: 90%;
+        height: 65%;
+    }
+
+    .address-bar p {
+        padding: 15px;
+    }
+
+    .address-bar h1{
+        border: 0px;
+        padding: 0;
+        text-align: center;
+    
+    }
+
+    .address-bar div {
+        height: auto;
+        width: auto;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .search-box{
+        height: 55px;
+        width: 300px;
+    }
+
+    #mapid {
+        height: 700px;
+        margin-top: 100px;
+    }
+}
