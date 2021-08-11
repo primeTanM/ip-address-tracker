@@ -62,7 +62,7 @@ body {
     position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     top: 175px;
     width: 75%;
@@ -76,15 +76,11 @@ body {
 .address-bar div {
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    /* align-items: center; */
     height: 175px;
     width: 300px;
     padding: 20px;
     padding-left: 30px;
     padding-top: 15px;
-    
-
 }
 
 
